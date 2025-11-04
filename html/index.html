@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="data:,">
+    <title>FlappyBird</title>
+</head>
+<body>
+    <div id="game-over" style="display: none">
+        <h1>Игра окончена. Птичка врезалась.</h1>
+        <h1>Ваш счёт: <span id="recordGameOver">0</span></h1>
+        <button id="replay">Заново</button>
+    </div>
+    <div class="interface-game">
+        <div id="points">
+            <div class="count-points">
+                <h1 class="title-points">Текущие очки:</h1>
+                <p id="now-points">0</p>
+            </div>
+            <div class="count-points">
+                <h1 class="title-points">Рекорд:</h1>
+                <p id="record-points">0</p>
+            </div>
+        </div>
+        <canvas id="canvas"></canvas>
+    </div>
+</body>
+</html>
+<script type="module" src="../js/main.js"></script>
